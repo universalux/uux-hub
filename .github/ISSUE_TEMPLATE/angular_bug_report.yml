@@ -1,22 +1,22 @@
 name: 🐞 Angular Component Bug
 description: Report a bug or unexpected behavior in an Angular UUX component.
 title: "[BUG - Angular]: "
-labels: bug
+labels: ["bug", "framework: angular"]
 assignees:
   - aldaydev
 
 body:
   - type: markdown
-      attributes:
-        value: |
-          Thanks for taking the time to report a bug!
-          Please fill out the details below to help us reproduce and fix it quickly. 🙏
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+        Please fill out the details below to help us reproduce and fix it quickly. 🙏
 
   - type: dropdown
     id: component
     attributes:
       label: Component
-      description: Select the component your issue is about
+      description: Select the component your issue is about.
       options:
         - menu-button
     validations:
@@ -70,5 +70,5 @@ body:
     id: additional
     attributes:
       label: Additional context
-      description: Add any other context, screenshots or code snippets that could help.
+      description: Add any other context, screenshots, or code snippets that could help.
       placeholder: "You can also attach images or link to a StackBlitz reproduction."
