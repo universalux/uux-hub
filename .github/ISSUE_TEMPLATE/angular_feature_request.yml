@@ -1,0 +1,69 @@
+name: ⚙️ Angular Feature Request
+description: Suggest a new feature or improvement for an Angular UUX component.
+title: "[FEATURE - Angular]: "
+labels: ["enhancement", "framework: angular"]
+assignees:
+  - aldaydev
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest an improvement! 💡
+        Please fill out the details below to help us evaluate and prioritize your request.
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      description: What version of the selected component are you using?
+      placeholder: "e.g. 18.0.0"
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Select the component this feature relates to.
+      options:
+        - menu-button
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your idea
+      description: Provide a clear and detailed description of the feature or improvement you’re proposing.
+      placeholder: "Add support for custom icons inside the menu-button component..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Explain the scenario or problem that motivates this feature.
+      placeholder: "When integrating with X, users cannot currently do Y. Adding this feature would solve..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Benefit
+      description: How would this feature improve the component or user experience?
+      placeholder: "This would make the component more flexible and reduce the need for custom wrappers."
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you tried any workarounds or existing solutions?
+      placeholder: "Currently I use a custom directive, but it’s not ideal because..."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any extra information, mockups, or references that might help.
+      placeholder: "Attach screenshots, code samples, or reference links here."

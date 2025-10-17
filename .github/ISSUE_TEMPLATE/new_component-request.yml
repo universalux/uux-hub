@@ -1,0 +1,75 @@
+name: "🧱 New Component Proposal"
+description: Suggest a new component to be added to the Universal UX library, regardless of framework.
+title: "[NEW COMPONENT]: "
+labels: ["new-component", "proposal"]
+assignees:
+  - aldaydev
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in contributing ideas to Universal UX! 🚀
+        Please fill out the form below to help us understand your proposal.
+
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Target framework
+      description: Which framework would this component be for?
+      options:
+        - Angular
+    validations:
+      required: true
+
+  - type: input
+    id: component_name
+    attributes:
+      label: Suggested name
+      description: What would you call this component?
+      placeholder: e.g. ng-carousel, ng-text-editor
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What problem does this component solve? Why should it exist?
+      placeholder: Describe the use case, goal, or pain point this component addresses.
+    validations:
+      required: true
+
+  - type: textarea
+    id: key_features
+    attributes:
+      label: Key features
+      description: What are the main characteristics or behaviors of this component?
+      placeholder: e.g. Accessible, responsive, customizable theme, animations support…
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What’s your motivation behind this proposal?
+      options:
+        - label: It would be widely useful to the community
+        - label: I need it for a specific project
+        - label: I’d like to contribute by developing it
+        - label: It’s missing from the current library
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References or inspiration
+      description: Include links, screenshots, or examples of similar components from other libraries or design systems.
+      placeholder: e.g. Material UI’s Tooltip, Radix UI Dialog, etc.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add any extra information or ideas you think might help.
+      placeholder: Technical notes, accessibility considerations, etc.

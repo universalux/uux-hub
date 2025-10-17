@@ -1,0 +1,74 @@
+name: 🐞 Angular Component Bug
+description: Report a bug or unexpected behavior in an Angular UUX component.
+title: "[BUG - Angular]: "
+labels: bug
+assignees:
+  - aldaydev
+
+body:
+  - type: markdown
+      attributes:
+        value: |
+          Thanks for taking the time to report a bug!
+          Please fill out the details below to help us reproduce and fix it quickly. 🙏
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Select the component your issue is about
+      options:
+        - menu-button
+    validations:
+      required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      description: What version of the component are you using?
+      placeholder: "e.g. 18.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the problem
+      description: Provide a clear and concise description of the issue.
+      placeholder: "The signal doesn't change when clicking on toggler..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Observe that '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+      placeholder: "The menu button should change the signal value."
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Framework or browser details
+      placeholder: "Angular 17, Chrome 129, macOS"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context, screenshots or code snippets that could help.
+      placeholder: "You can also attach images or link to a StackBlitz reproduction."
