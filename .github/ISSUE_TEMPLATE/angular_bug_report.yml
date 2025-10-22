@@ -18,7 +18,8 @@ body:
       label: Component
       description: Select the component your issue is about.
       options:
-        - menu-button
+        - menu-toggle
+        - theme-toggle
     validations:
       required: true
 

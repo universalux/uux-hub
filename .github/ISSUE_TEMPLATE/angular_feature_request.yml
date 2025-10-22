@@ -25,7 +25,8 @@ body:
       label: Component
       description: Select the component this feature relates to.
       options:
-        - menu-button
+        - menu-toggle
+        - theme-toggle
     validations:
       required: true
 
