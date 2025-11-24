@@ -20,6 +20,13 @@ body:
       options:
         - menu-toggle
         - theme-toggle
+        - link-button
+        - simple-button
+        - content-card
+        - content-carousel
+        - hero-carousel
+        - scroll-nav
+        - expand
     validations:
       required: true
 
