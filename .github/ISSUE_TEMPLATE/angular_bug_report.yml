@@ -27,6 +27,11 @@ body:
         - hero-carousel
         - scroll-nav
         - expand
+        - expand-group
+        - ratings
+        - button-kit
+        - toggle-kit
+        - uux-kit
     validations:
       required: true
 
